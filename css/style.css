@@ -6,7 +6,7 @@
 
 html {
     background: linear-gradient(to bottom, #000 0%, #43484D 50%, #000 100%);
-    background-repeat: no-repeat;
+    background-repeat: cover;
     height:100%;
     font-family: 'Open Sans', sans-serif;
 }
@@ -31,6 +31,7 @@ h2 {
     margin-top: 50px;
     font-weight: 300;
     font-size:20px;
+    margin-bottom:50px;
 }
 
 h2 span {
@@ -77,7 +78,7 @@ h2 span {
     color:white;
     border:0px;
     font-family: 'Open Sans';
-    font-weight:400;
+    font-weight:300;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
 }
@@ -107,5 +108,45 @@ h2 span {
 
 .btn:active {
     opacity: .5;
-    background-color:
+}
+
+.description {
+    text-align:left;
+    width:25%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+.description ul{
+    margin-top:5px;
+    padding-left:20px;
+    list-style-image: url(../ico.png);
+    
+}
+
+.description ul li {
+    margin-top:10px;
+}
+
+.description ul ul {
+    list-style-image: none;
+    list-style-type: square;
+    margin-top: 5px;
+}
+
+.description ul ul li {
+    margin-top:5px;
+}
+
+.description {
+    background: rgba(255, 255, 255, .1);
+    border-radius:10px;
+    padding:20px;
+    margin-top:50px;
+}
+
+.description a {
+    text-decoration:none;
+    color: #ff940E;
 }
