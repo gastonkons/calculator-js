@@ -147,7 +147,6 @@ function keyDowns(){
 
 function keyPress(e){
     const key = transformPointToComma(e.key);
-    console.log(key);
     key === '1' ? addNumberInput(1) : null;
     key === '2' ? addNumberInput(2) : null;
     key === '3' ? addNumberInput(3) : null;
@@ -171,40 +170,12 @@ function keyPress(e){
     key === 'Backspace' ? lastChar() : null;
 
     key === 'Escape' ? clearScreen('0') : null;
-    
-
-    /*
-        value === "0" ? addNumberInput(0) : null;
-    value === "1" ? addNumberInput(1) : null;
-    value === "2" ? addNumberInput(2) : null;
-    value === "3" ? addNumberInput(3) : null;
-    value === "4" ? addNumberInput(4) : null;
-    value === "5" ? addNumberInput(5) : null;
-    value === "6" ? addNumberInput(6) : null;
-    value === "7" ? addNumberInput(7) : null;
-    value === "8" ? addNumberInput(8) : null;
-    value === "9" ? addNumberInput(9) : null;
-    value === "," ? addNumberInput(',') : null;
-
-    value === "+" ? setOperation('+') : null;
-    value === "-" ? setOperation('-') : null;
-    value === "x" ? setOperation('*') : null;
-    value === "/" ? setOperation('/') : null;
-    value === "%" ? setOperation('%') : null;
-    value === "+/-" ? setOperation('+/-') : null;
-
-    value === "=" ? calculation() : null;
-
-    value === "AC" ? clearScreen('0') : null;
-    */
 }
 
 function lastChar(){
     const inputScreen = document.querySelector('.calculator__screen');
     let value = inputScreen.value;
-    console.log(typeof inputScreen.value);
     value = value.replace(value[value.length - 1], "");
-    console.log(value);
     if (value === "" || value === "0"){
         inputScreen = "0";
         return;
